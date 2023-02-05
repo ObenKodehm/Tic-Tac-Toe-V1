@@ -8,7 +8,98 @@
   <title>Tic Tac Toe</title>
 </head>
 <body>
-  
+
+  <div class="player-bot-choices">
+    <button id="player">vs Player</button>
+  </div>
+
+  <main class="main-game">
+
+    <div class="player-name-choice-selector">
+      <div class="player1-selector">
+        <label for="player1">
+          Player1:
+          <input type="text" id="player1-name">
+        </label>
+        <select name="player1-choice" id="player1-choice">
+          <option value="X">X</option>
+          <option value="O">O</option>
+        </select>
+      </div>
+      
+      <span>Vs</span>
+
+      <div class="player2-selector">
+        <label for="player2">
+          Player2:
+          <input type="text" id="player2-name">
+        </label>
+        <select name="player2-choice" id="player2-choice">
+          <option value="X">X</option>
+          <option value="O">O</option>
+        </select>
+      </div>
+
+      <div class="start-game-choice-error">
+        <p id="choice-error">Please select different options for each player.</p>
+        <button id="start-game">Start Game</button>
+      </div>
+    </div>
+
+    <div class="game-body">
+
+      <p class="game-title">Tic Tac Toe</p>
+      <p>Current Turn: <span id="current-turn">X</span></p>
+
+      <div class="game-board">
+
+        <div class="game-tile">
+          <p id="tile-1"></p>
+        </div>
+
+        <div class="game-tile">
+          <p id="tile-2"></p>
+        </div>
+
+        <div class="game-tile">
+          <p id="tile-3"></p>
+        </div>
+
+        <div class="game-tile">
+          <p id="tile-4"></p>
+        </div>
+
+        <div class="game-tile">
+          <p id="tile-5"></p>
+        </div>
+
+        <div class="game-tile">
+          <p id="tile-6"></p>
+        </div>
+
+        <div class="game-tile">
+          <p id="tile-7"></p>
+        </div>
+
+        <div class="game-tile">
+          <p id="tile-8"></p>
+        </div>
+
+        <div class="game-tile">
+          <p id="tile-9"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <div class="game-winner">
+    <p><span id="winner"></span> is the Winner!!</p>
+    <button id="restart-game">Restart Game</button>
+  </div>
+
 </body>
 <script src="index.js"></script>
 </html>
